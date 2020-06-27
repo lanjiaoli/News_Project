@@ -12,11 +12,27 @@
 				"navigationBarTitleText": "视频"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/tool/tool",
+            "style" : {
+				"navigationBarTitleText":"工具"
+			}
+        }
+        ,{
+            "path" : "pages/index/newslist/newslist",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/index/webDetail/webDetail",
+            "style" : {
+				"navigationBarTitleText":"详情"
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#DD524D",
+		"navigationBarBackgroundColor": "#228fbd",
 		"backgroundColor": "#2C405A"
 	},
 	"tabBar":{
@@ -24,16 +40,24 @@
 			
 			{
 				"pagePath":"pages/index/index",
-				"text":"资讯"
+				"text":"资讯",
+				"iconPath":"static/news.png",
+				"selectedIconPath":"static/selectNews.png"
 			},
 			{
 				"pagePath":"pages/video/index",
 				"text":"视频",
-				"iconPath":"",
-				"selectedIconPath":""
+				"iconPath":"static/video.png",
+				"selectedIconPath":"static/selectVideo.png"
+			},
+			{
+				"pagePath":"pages/tool/tool",
+				"text":"工具",
+				"iconPath":"static/tool.png",
+				"selectedIconPath":"static/selectTool.png"
 			}
 		],
-		"selectedColor":"#f15a22",
+		"selectedColor":"#228fbd",
 		"color":"#999d9c"
 	}
 }

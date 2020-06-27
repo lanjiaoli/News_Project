@@ -1,52 +1,55 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+	<view>
+		 <uniSegmentedControl 
+		 :current="current" 
+		 :values="items" 
+		 @clickItem="onClickItem" 
+		 active-color="#f15a22"
+		 style-type="text">
+		 </uniSegmentedControl>
+
+			
+	<!-- <newslistView></newslistView> -->
 	</view>
 </template>
 
 <script>
+	import newslistView  from "pages/index/newslist/newslist"
+	import uniSegmentedControl from "@/components/uni-segmented-control/uni-segmented-control.vue"
+	
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				items: [
+					'推荐',
+					'北京',
+					'娱乐',
+					'情感',
+					'杂谈',
+					'经济',
+					'旅游',
+					'文学',
+					'图片'
+				],
+				current:0
 			}
 		},
 		onLoad() {
-
+			
 		},
 		methods: {
-
+			
+		},
+		components:{
+			newslistView,
+			uniSegmentedControl
+			
 		}
 	}
+	
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	
 </style>

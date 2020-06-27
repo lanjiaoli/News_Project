@@ -1,5 +1,14 @@
 <script>
 	export default {
+		data(){
+			return {
+				newsParam:{
+					type:"top",
+					key:JUCNewsKey,
+				}
+			}
+		},
+		
 		onLaunch: function() {
 			console.log('App Launch')
 		},
@@ -14,4 +23,6 @@
 
 <style>
 	/*每个页面公共css */
+	@import "/common/iconfont.css";
+	
 </style>
