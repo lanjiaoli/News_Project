@@ -80,10 +80,11 @@
 .content{
 	.class_item{
 		// display: flex;
+		// position: fixed;
 		border-bottom: 0.5rpx solid #dddddd;
 		margin: 0rpx 30rpx;
 		.item_image{
-			display: flex;
+			// display: flex;
 			justify-content: space-between;
 			// align-items: center;
 			
@@ -92,6 +93,7 @@
 				width: 30%;
 				height: 28vw ;
 				border-radius: 10rpx;
+				
 			}
 		}
 		.item_content{

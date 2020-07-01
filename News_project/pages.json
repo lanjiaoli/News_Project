@@ -28,10 +28,14 @@
 				"navigationBarTitleText":"详情"
 			}
         }
+        ,{
+            "path" : "pages/index/subscribe/subscribe",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "暂时没有名字",
 		"navigationBarBackgroundColor": "#228fbd",
 		"backgroundColor": "#2C405A"
 	},

@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="page">
 	<!-- 	 <uniSegmentedControl 
 		 :current="current" 
 		 :values="items" 
@@ -7,34 +7,48 @@
 		 active-color="#f15a22"
 		 style-type="text">
 		 </uniSegmentedControl> -->
-		<scroll-view 
-		scroll-x="true" 
-		class="header">
-			<view class="header_item" v-for="(item , index) in items" :key = "index">
-				<text 
-				@click="handelHeader(index)"
-				:style="{
-					color: index === current ? '#F15A22':'#333',
-					fontSize: index === current ? '50upx':'30upx',
-				}"
-				>{{item}}</text>
-				<view class="heade_line" 
-				:style="{
-					backgroundColor: index === current ? '#F15A22':'#fff'
-				}">
+	
+		<!-- 顶部导航栏开始 -->
+		<view class="heade_navigation">
+			<scroll-view
+			scroll-x="true" 
+			class="header">
+				<view class="header_item" v-for="(item , index) in items" :key = "index">
+					<text 
+					@click="handelHeader(index)"
+					:style="{
+						color: index === current ? '#F15A22':'#333',
+						fontsize: index === current ? '50upx':'30upx',
+					}"
+					>{{item}}</text>
+					<view class="heade_line" 
+					:style="{
+						backgroundColor: index === current ? '#F15A22':'#fff'
+					}">
+					</view>
+					
 				</view>
-				
+			</scroll-view>
+		</view>
+		<!-- 顶部导航栏结束 -->
+	
+		<view class="content">
+	
+			<view class="home_remmend" v-if="current == 0">
+				<newslistView></newslistView>
 			</view>
-		</scroll-view>
-		
+			<view class="home_local" v-if="current ==1">
+				<subscriveView></subscriveView>
+			</view>
+		</view>
 			
-	<!-- <newslistView></newslistView> -->
+	
 	</view>
 </template>
 
 <script>
 	import newslistView  from "pages/index/newslist/newslist"
-	import uniSegmentedControl from "@/components/uni-segmented-control/uni-segmented-control.vue"
+	import subscriveView from "pages/index/subscribe/subscribe"
 	
 	export default {
 		data() {
@@ -50,11 +64,6 @@
 					'旅游',
 					'文学',
 					'图片',
-					'图片',
-					'图片',
-					'图片',
-					'图片',
-					
 				],
 				current:0
 			}
@@ -70,7 +79,7 @@
 		},
 		components:{
 			newslistView,
-			uniSegmentedControl
+			subscriveView
 			
 		}
 	}
@@ -79,20 +88,23 @@
 
 <style lang="scss">
 	.header{
-		width: 100%;
-		
+	
 		// overflow: hidden;
 		// // overflow-y: hidden;
+		background-color:#FFFFFF;
 		white-space: nowrap;
 		height: 100rpx;
-		
+		position: fixed;
+		top: 64;
+		left: 0;
 		.header_item{
 			display: inline-block;
 			width: 150rpx;
 			// height: 80upx;
 			border:  1rpx solid #FFFFFF;;
 			text-align: center;
-			font-size: 32upx;
+			margin-top: 15upx;
+			
 		}
 		.heade_line{
 			
@@ -106,6 +118,10 @@
 		::-webkit-scrollbar {
 			display: none;
 		}
+	}
+	
+	.heade_navigation{
+		height: 100upx;
 	}
 	
 </style>

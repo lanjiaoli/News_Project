@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "资讯",
+  "usingComponents": {
+    "newslist-view": "/pages/index/newslist/newslist",
+    "subscrive-view": "/pages/index/subscribe/subscribe"
+  }
+}

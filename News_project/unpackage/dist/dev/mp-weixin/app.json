@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/video/index",
+    "pages/tool/tool",
+    "pages/index/newslist/newslist",
+    "pages/index/webDetail/webDetail",
+    "pages/index/subscribe/subscribe"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "暂时没有名字",
+    "navigationBarBackgroundColor": "#228fbd",
+    "backgroundColor": "#2C405A"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "资讯",
+        "iconPath": "static/news.png",
+        "selectedIconPath": "static/selectNews.png"
+      },
+      {
+        "pagePath": "pages/video/index",
+        "text": "视频",
+        "iconPath": "static/video.png",
+        "selectedIconPath": "static/selectVideo.png"
+      },
+      {
+        "pagePath": "pages/tool/tool",
+        "text": "工具",
+        "iconPath": "static/tool.png",
+        "selectedIconPath": "static/selectTool.png"
+      }
+    ],
+    "selectedColor": "#228fbd",
+    "color": "#999d9c"
+  },
+  "usingComponents": {}
+}

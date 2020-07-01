@@ -11,9 +11,8 @@ const app = new Vue({
 })
 app.$mount()
 // 聚合数据
-const JUCNewsKey = '5879c983c87f5f7a27fbc71347ed6760';
 
-Vue.prototype.$NewJHKey = JUCNewsKey;
 // 首页数据
+const BASE_Url = "http://wireless.tianya.cn";
 const homeServerUlr = '/v/forumStand/getRecommendArt'
-Vue.prototype.$BaseHomeServerUlr = homeServerUlr;
+Vue.prototype.$BaseHomeServerUlr = BASE_Url + homeServerUlr;

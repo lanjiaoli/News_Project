@@ -1,4 +1,3 @@
-const BASE_Url = "http://wireless.tianya.cn";
 const GlobalLoadingText = "加载中...";
 
 export const globalRequest = (options)=> {
@@ -8,7 +7,7 @@ export const globalRequest = (options)=> {
 			
 		// })
 		uni.request({
-			url:BASE_Url + options.url,
+			url: options.url,
 			data:options.data || {},
 			method:options.method || "GET",
 			header:options.header,
@@ -16,6 +15,7 @@ export const globalRequest = (options)=> {
 			success:(res)=>{
 				uni.hideToast();
 				console.log("请求成功");
+
 				resolve(res.data)
 			},
 			fail(err) {
