@@ -1,0 +1,32 @@
+.content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		overflow-y: auto;
+		/* 设置元素在主轴上的对齐方式 */
+		/* flex-start :默认 左对齐 */
+		/* flex-end :默认 右对齐 */
+		/* cneter :默认 居中对齐 */
+		/* space-between :项目间距等距 */
+		/* space-around: */
+		justify-content: space-around;
+		/* streth: */
+		align-items: flex-start;
+	}
+	.content>view{
+		width: 100upx;
+		/* height: 200upx; */
+		border: 2rpx solid #FFFFFF;
+	}
+	.green {
+		background-color: green;
+	}
+
+	.red {
+		background-color: red;
+	}
+
+	.yellow {
+		background-color: yellow;
+	}
