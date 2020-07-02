@@ -7775,7 +7775,14 @@ function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.globalRequest = void 0;var GlobalLoadingText = "加载中...";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.globalRequest = exports.default = void 0;var GlobalLoadingText = "加载中...";
+
+var ServerUrl = "xxxx"; //生成环境
+
+// const ServerUrl = "xxxx" //生成环境
+// export  defent 导出
+var _default = {
+  ServerUrl: ServerUrl };exports.default = _default;
 
 var globalRequest = function globalRequest(options) {
   return new Promise(function (resolve, reject) {

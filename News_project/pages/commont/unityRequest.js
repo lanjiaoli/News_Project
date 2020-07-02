@@ -1,5 +1,12 @@
 const GlobalLoadingText = "加载中...";
 
+const ServerUrl = "xxxx" //生成环境
+
+// const ServerUrl = "xxxx" //生成环境
+// export  defent 导出
+export default{
+	ServerUrl,
+}
 export const globalRequest = (options)=> {
 	return new Promise((resolve,reject)=> {
 		// uni.showLoading({

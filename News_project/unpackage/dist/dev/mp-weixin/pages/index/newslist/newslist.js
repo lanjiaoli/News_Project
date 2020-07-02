@@ -222,7 +222,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 39:
+/***/ 46:
 /*!******************************************************************************************************!*\
   !*** /Users/linuse/News_Project/News_project/main.js?{"page":"pages%2Findex%2Fnewslist%2Fnewslist"} ***!
   \******************************************************************************************************/
@@ -238,5 +238,5 @@ createPage(_newslist.default);
 
 /***/ })
 
-},[[39,"common/runtime","common/vendor"]]]);
+},[[46,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/index/newslist/newslist.js.map

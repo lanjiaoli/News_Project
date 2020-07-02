@@ -49,7 +49,7 @@
 <script>
 	import newslistView  from "pages/index/newslist/newslist"
 	import subscriveView from "pages/index/subscribe/subscribe"
-	
+	import comment from "../commont/unityRequest.js"
 	export default {
 		data() {
 			return {
@@ -69,7 +69,8 @@
 			}
 		},
 		onLoad() {
-			
+			var seserverUrl = comment.ServerUrl;
+			console.log(seserverUrl)
 		},
 		methods: {
 			handelHeader(num){
