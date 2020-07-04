@@ -218,7 +218,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 53:
+/***/ 55:
 /*!********************************************************************************************************!*\
   !*** /Users/linuse/News_Project/News_project/main.js?{"page":"pages%2Findex%2Fsubscribe%2Fsubscribe"} ***!
   \********************************************************************************************************/
@@ -234,5 +234,5 @@ createPage(_subscribe.default);
 
 /***/ })
 
-},[[53,"common/runtime","common/vendor"]]]);
+},[[55,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/index/subscribe/subscribe.js.map
