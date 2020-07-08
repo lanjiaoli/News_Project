@@ -3,13 +3,16 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "资讯"
+				"navigationBarTitleText": "资讯",
+				"enablePullDownRefresh":true
 			}
+			
 		},
 		{
 			"path": "pages/video/index",
 			"style": {
-				"navigationBarTitleText": "视频"
+				"navigationBarTitleText": "视频",
+				"enablePullDownRefresh":true
 			}
 		}
 	    ,{
@@ -30,6 +33,17 @@
         }
         ,{
             "path" : "pages/index/subscribe/subscribe",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText":"搜索",
+				"onReachBottomDistance":100
+				}
+        }
+        ,{
+            "path" : "pages/movie/movie",
             "style" : {}
         }
     ],
@@ -55,7 +69,7 @@
 				"selectedIconPath":"static/selectVideo.png"
 			},
 			{
-				"pagePath":"pages/tool/tool",
+				"pagePath":"pages/search/search",
 				"text":"工具",
 				"iconPath":"static/tool.png",
 				"selectedIconPath":"static/selectTool.png"

@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "资讯",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "newslist-view": "/pages/index/newslist/newslist",
     "subscrive-view": "/pages/index/subscribe/subscribe"

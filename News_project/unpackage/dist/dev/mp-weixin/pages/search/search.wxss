@@ -1,0 +1,30 @@
+.search_block{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	padding: 0rpx 20rpx 20rpx 20rpx;
+}
+.search_ico-wapper{
+	background-color: #F15A22;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack:  center;
+	-webkit-justify-content:  center;
+	        justify-content:  center;
+}
+.search_ico{
+	width: 40rpx;
+	height: 40rpx;
+}
+.search_input{
+	font-size: 14px;
+	background-color: #F15A22;
+	height: 60rpx;
+	width: 650rpx;
+}
+

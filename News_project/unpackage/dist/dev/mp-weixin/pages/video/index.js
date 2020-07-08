@@ -130,49 +130,128 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
-{
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _components$onUnload$;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var testComp = function testComp() {__webpack_require__.e(/*! require.ensure | components/testComponents */ "components/testComponents").then((function () {return resolve(__webpack_require__(/*! ../../components/testComponents.vue */ 63));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = (_components$onUnload$ = {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  components: {
+    testComp: testComp },
+
+
+  onUnload: function onUnload() {
+    // 页面卸载时，清除动画操作
+
+    this.animation = {};
+
+  },
+
+  onLoad: function onLoad() {
+    this.animation = uni.createAnimation({});
+
+
+  },
 
   data: function data() {
     return {
@@ -205,12 +284,62 @@ var _default =
 
       {
         image: '../../static/photo/6.jpg',
-        title: "分歧者2 · 绝地反击" }] };
+        title: "分歧者2 · 绝地反击" }],
+
+
+      // 预告片数组
+      videos: [
+      {
+        url: "https://media.w3.org/2010/05/sintel/trailer.mp4",
+        thumd: "../../static/photo/6.jpg" },
+
+      {
+        url: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+        thumd: "../../static/photo/2.jpg" },
+
+      {
+        url: "https://v-cdn.zjol.com.cn/277000.mp4",
+        thumd: "../../static/photo/1.jpg" },
+
+      {
+        url: "https://v-cdn.zjol.com.cn/277002.mp4",
+        thumd: "../../static/photo/3.jpg" }],
 
 
 
+      animationData: {} };
 
-  } };exports.default = _default;
+  },
+
+  methods: {
+    praiseMe: function praiseMe() {
+
+
+      this.animation.translateY(-60).opacity(1).step({ duration: 400 });
+      // 导出动画数据道view组件，实现组件的动画效果
+      this.animationData = this.animation.export();
+      setTimeout(function () {
+        this.animation.translateY(0).opacity(0).step({
+          duration: 0 });
+
+        this.animationData = this.animation.export();
+      }.bind(this), 500);
+
+    } } }, _defineProperty(_components$onUnload$, "onUnload", function onUnload()
+
+
+{
+  // 页面卸载的时候，清除动画数组
+  this.animationData = {};
+}), _defineProperty(_components$onUnload$, "onPullDownRefresh", function onPullDownRefresh()
+
+{
+  console.log("我下拉了");
+  setTimeout(function () {
+    uni.stopPullDownRefresh();
+  }, 1000);
+}), _components$onUnload$);exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

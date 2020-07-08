@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "视频",
-  "usingComponents": {}
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "test-comp": "/components/testComponents"
+  }
 }

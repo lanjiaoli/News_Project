@@ -25,6 +25,8 @@ createApp(app).$mount();
 var BASE_Url = "http://wireless.tianya.cn";
 var homeServerUlr = '/v/forumStand/getRecommendArt';
 _vue.default.prototype.$BaseHomeServerUlr = BASE_Url + homeServerUlr;
+
+_vue.default.prototype.serverUrl = BASE_Url;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createApp"]))
 
 /***/ }),

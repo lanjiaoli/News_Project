@@ -16,3 +16,5 @@ app.$mount()
 const BASE_Url = "http://wireless.tianya.cn";
 const homeServerUlr = '/v/forumStand/getRecommendArt'
 Vue.prototype.$BaseHomeServerUlr = BASE_Url + homeServerUlr;
+
+Vue.prototype.serverUrl = BASE_Url;

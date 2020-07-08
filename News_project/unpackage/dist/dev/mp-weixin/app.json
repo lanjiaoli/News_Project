@@ -5,7 +5,8 @@
     "pages/tool/tool",
     "pages/index/newslist/newslist",
     "pages/index/webDetail/webDetail",
-    "pages/index/subscribe/subscribe"
+    "pages/index/subscribe/subscribe",
+    "pages/search/search"
   ],
   "subPackages": [],
   "window": {
@@ -29,7 +30,7 @@
         "selectedIconPath": "static/selectVideo.png"
       },
       {
-        "pagePath": "pages/tool/tool",
+        "pagePath": "pages/search/search",
         "text": "工具",
         "iconPath": "static/tool.png",
         "selectedIconPath": "static/selectTool.png"
